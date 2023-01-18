@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Italia_seria extends StatefulWidget {
-  const Italia_seria({super.key});
+class England extends StatefulWidget {
+  const England({super.key});
 
   @override
-  State<Italia_seria> createState() => _Italia_seriaState();
+  State<England> createState() => _EnglandState();
 }
 
-class _Italia_seriaState extends State<Italia_seria> {
-  Widget ser = Image.asset('flags/italia.jpg');
+class _EnglandState extends State<England> {
+  Widget pre = Image.asset('flags/angliya.png');
   int? val;
   @override
   Widget build(BuildContext context) {
@@ -19,212 +19,261 @@ class _Italia_seriaState extends State<Italia_seria> {
             child: ListView(
               children: [
                 RadioListTile(
-                    title: Text('1.Rome'),
+                    title: Text('1.Man City'),
                     value: 1,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                        ser=Column(children: [Image.asset('image_seria/roma.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/mancity.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('2.Milan'),
+                    title: Text('2.Liverpul'),
                     value: 2,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/milan.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/liverpul.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('3.Juventus'),
+                    title: Text('3.Man Utd'),
                     value: 3,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/juventus.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/manutd.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('4.Inter'),
+                    title: Text('4.Chelsea'),
                     value: 4,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/inter.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/chelsea.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('5.Napoli'),
+                    title: Text('5.Arsenal'),
                     value: 5,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/napoli.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/arsenal.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('6.Lazio'),
+                    title: Text('6.Tottenhem'),
                     value: 6,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/lazio.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/tottenham.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('7.Atalanta'),
+                    title: Text('7.Everton'),
                     value: 7,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/atalanta.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/everton.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('8.Torino'),
+                    title: Text('8.West Bromvich'),
                     value: 8,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/torino.png')],);
+                        pre = Column(
+                          children: [
+                            Image.asset('image_premier/vestbromvich.png')
+                          ],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('9.Sampdoria'),
+                    title: Text('9.Leicester'),
                     value: 9,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/sampdoria.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/lester.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('10.Bologina'),
+                    title: Text('10.Norvich'),
                     value: 10,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/bologina.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/norvich.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('11.Genoa'),
+                    title: Text('11.Fulham'),
                     value: 11,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/genoa.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/fulham.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('12.Fiorentina'),
+                    title: Text('12.Wolverhampton'),
                     value: 12,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/fiorintina.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/wolves.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('13.Cagilari'),
+                    title: Text('13.Brighton'),
                     value: 13,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/calgari.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/brayton.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('14.Udinese'),
+                    title: Text('14.Newcastle'),
                     value: 14,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/udinese.png')],);
+                        pre = Column(
+                          children: [
+                            Image.asset('image_premier/newcastle.png')
+                          ],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('15.Sassuolo'),
+                    title: Text('15.Watford'),
                     value: 15,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/sassuolo.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/watford.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('16.Lecce'),
+                    title: Text('16.Southampton'),
                     value: 16,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/lecce.png')],);
+                        pre = Column(
+                          children: [
+                            Image.asset('image_premier/soutgemton.png')
+                          ],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('17.Bresica'),
+                    title: Text('17.Burnley'),
                     value: 17,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/bresico.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/burnley.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('18.Empoli'),
+                    title: Text('18.A Villa'),
                     value: 18,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/empoli.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/villa.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('19.Spal'),
+                    title: Text('19.Leeds'),
                     value: 19,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/spal.png')],);
+                        pre = Column(
+                          children: [Image.asset('image_premier/leeds.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('20.Parma'),
+                    title: Text('20.Brentford'),
                     value: 20,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/parma.png')],);
+                        pre = Column(
+                          children: [
+                            Image.asset('image_premier/brentford.png')
+                          ],
+                        );
                       });
                     }),
               ],
             ),
           ),
-          Container(
-            child: ser,
-            height: 320,
-          )
+       Container(
+    height: 320,
+    child: pre,
+  
+  )
         ],
       ),
     );

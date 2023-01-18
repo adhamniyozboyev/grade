@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Italia_seria extends StatefulWidget {
-  const Italia_seria({super.key});
+class Franch extends StatefulWidget {
+  const Franch({super.key});
 
   @override
-  State<Italia_seria> createState() => _Italia_seriaState();
+  State<Franch> createState() => _FranchState();
 }
 
-class _Italia_seriaState extends State<Italia_seria> {
-  Widget ser = Image.asset('flags/italia.jpg');
+class _FranchState extends State<Franch> {
+  Widget fre = Image.asset('flags/france.png');
   int? val;
   @override
   Widget build(BuildContext context) {
@@ -19,211 +19,253 @@ class _Italia_seriaState extends State<Italia_seria> {
             child: ListView(
               children: [
                 RadioListTile(
-                    title: Text('1.Rome'),
+                    title: Text('1.PSG'),
                     value: 1,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                        ser=Column(children: [Image.asset('image_seria/roma.png')],);
+                        Column(
+                          children: [
+                            fre = Image.asset('image_franch/paris.png')
+                          ],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('2.Milan'),
+                    title: Text('2.Lion'),
                     value: 2,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/milan.png')],);
+                        fre = Column(
+                          children: [
+                            Image.asset('image_franch/lion.png'),
+                          ],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('3.Juventus'),
+                    title: Text('3.Marcel'),
                     value: 3,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/juventus.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/marsel.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('4.Inter'),
+                    title: Text('4.Monoco'),
                     value: 4,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/inter.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/monoco.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('5.Napoli'),
+                    title: Text('5.Nant'),
                     value: 5,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/napoli.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/nant.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('6.Lazio'),
+                    title: Text('6.Dijon'),
                     value: 6,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/lazio.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/dijon.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('7.Atalanta'),
+                    title: Text('7.Sent-eten'),
                     value: 7,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/atalanta.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/sent_eten.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('8.Torino'),
+                    title: Text('8.Monpele'),
                     value: 8,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/torino.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/monpele.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('9.Sampdoria'),
+                    title: Text('9.Bordo'),
                     value: 9,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/sampdoria.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/bordo.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('10.Bologina'),
+                    title: Text('10.Tuluza'),
                     value: 10,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/bologina.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/tuluza.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('11.Genoa'),
+                    title: Text('11.Ren'),
                     value: 11,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/genoa.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/ren.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('12.Fiorentina'),
+                    title: Text('12.Amen'),
                     value: 12,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/fiorintina.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/amen.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('13.Cagilari'),
+                    title: Text('13.Raja'),
                     value: 13,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/calgari.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/raja.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('14.Udinese'),
+                    title: Text('14.Trua'),
                     value: 14,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/udinese.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/trua.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('15.Sassuolo'),
+                    title: Text('15.Gengam'),
                     value: 15,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/sassuolo.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/gengam.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('16.Lecce'),
+                    title: Text('16.Anje'),
                     value: 16,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/lecce.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/anje.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('17.Bresica'),
+                    title: Text('17.Pittsa'),
                     value: 17,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/bresico.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/pitsa.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('18.Empoli'),
+                    title: Text('18.Strasbur'),
                     value: 18,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/empoli.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/strasbur.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('19.Spal'),
+                    title: Text('19.Lill'),
                     value: 19,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/spal.png')],);
+                        fre = Column(
+                          children: [Image.asset('image_franch/lill.png')],
+                        );
                       });
                     }),
                 RadioListTile(
-                    title: Text('20.Parma'),
+                    title: Text('20.Mets'),
                     value: 20,
                     groupValue: val,
                     onChanged: (v) {
                       setState(() {
                         val = v!;
-                         ser=Column(children: [Image.asset('image_seria/parma.png')],);
+                        fre=Column(children: [Image.asset('image_franch/mets.png')],);
                       });
                     }),
               ],
             ),
           ),
           Container(
-            child: ser,
             height: 320,
+            child: fre,
           )
         ],
       ),
