@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grade/england.dart';
-import 'package:grade/franch.dart';
-import 'package:grade/italia.dart';
-import 'package:grade/spain.dart';
+import 'package:teams_logo/england.dart';
+import 'package:teams_logo/franch.dart';
+import 'package:teams_logo/italia.dart';
+import 'package:teams_logo/spain.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,6 +20,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Color col = Colors.red;
+  Color col1=Colors.black;
+  Color col2=Colors.black;
+  Color col3=Colors.black;
+  Color col4=Colors.black;
   Widget txt = Text('Top leagues');
   Widget con = Container(
     height: 700,
@@ -29,61 +33,83 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
-      backgroundColor: col,
-      appBar: AppBar(
-        title: txt,
+        drawer: Drawer(),
         backgroundColor: col,
-      ),
-      body:
-          Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.white,onPrimary: col),
-                onPressed: () {
-                  setState(() {
-                    con = Italia_seria();
-                    txt = Text('A seria');
-                    col = Colors.orange;
-                  });
-                },
-                child: Text('Italian')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.white,onPrimary: col),
-                onPressed: () {
-                  setState(() {
-                    con = Spain();
-                    txt = Text('La league');
-                    col = Colors.green;
-                  });
-                },
-                child: Text('Spain')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.white,onPrimary: col),
-                onPressed: () {
-                  setState(() {
-                    con = England();
-                    txt = Text('Premier league');
-                    col = Colors.brown;
-                  });
-                },
-                child: Text('England')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.white,onPrimary: col),
-                onPressed: () {
-                  setState(() {
-                    con = Franch();
-                    txt = Text('Leuague one');
-                    col = Colors.blueGrey;
-                  });
-                },
-                child: Text('Franch')),
-          ],
+        appBar: AppBar(
+          title: txt,
+          backgroundColor: col,
         ),
-        con
-      ]),
-    );
+        body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: col1, foregroundColor: Colors.white),
+                      onPressed: () {
+                        setState(() {
+                         col1=Colors.blue; 
+                         col2=Colors.black;
+                         col3=Colors.black;
+                         col4=Colors.black;
+                          con = Italia_seria();
+                          txt = Text('A seria');
+                          col = Color.fromARGB(255, 235, 196, 138);
+                        });
+                      },
+                      child: Text('Italian')),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: col2,foregroundColor: Colors.white),
+                      onPressed: () {
+
+                        setState(() {
+                            col1=Colors.black; 
+                         col2=Colors.blue;
+                         col3=Colors.black;
+                         col4=Colors.black;
+                          con = Spain();
+                          txt = Text('La league');
+                          col = Color.fromARGB(255, 181, 236, 183);
+                        });
+                      },
+                      child: Text('Spain')),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: col3,foregroundColor: Colors.white),
+                      onPressed: () {
+                        setState(() {  
+                            col1=Colors.black; 
+                         col2=Colors.black;
+                         col3=Colors.blue;
+                         col4=Colors.black;                        
+                          con = England();
+                          txt = Text('Premier league');
+                          col = Color.fromARGB(255, 238, 133, 191);
+                        });
+                      },
+                      child: Text('England')),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: col4,
+                        foregroundColor: Colors.white,
+                          ),
+                      onPressed: () {
+                        setState(() {
+                            col1=Colors.black; 
+                         col2=Colors.black;
+                         col3=Colors.black;
+                         col4=Colors.blue;
+                          con = Franch();
+                          txt = Text('Leuague one');
+                          col = Color.fromARGB(255, 182, 210, 25);
+                        });
+                      },
+                      child: Text('Franch')),
+                ],
+              ),
+              con
+            ]));
   }
 }

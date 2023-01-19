@@ -26,7 +26,7 @@ class _EnglandState extends State<England> {
                       setState(() {
                         val = v!;
                         pre = Column(
-                          children: [Image.asset('image_premier/mancity.png')],
+                          children: [Image.asset('image_premier/mancity.png'),Text('')],
                         );
                       });
                     }),

@@ -26,7 +26,9 @@ class _SpainState extends State<Spain> {
                       setState(() {
                         val = v!;
                         liga = Column(
-                          children: [Image.asset('image_liga/madrid.png')],
+                          children: [
+                            Image.asset('image_liga/madrid.png')
+                          ],
                         );
                       });
                     }),
@@ -38,7 +40,8 @@ class _SpainState extends State<Spain> {
                       setState(() {
                         val = v!;
                         liga = Column(
-                          children: [Image.asset('image_liga/barca.png')],
+                          children: [Image.asset('image_liga/barca.png'),
+                          ],
                         );
                       });
                     }),
@@ -50,7 +53,8 @@ class _SpainState extends State<Spain> {
                       setState(() {
                         val = v!;
                         liga = Column(
-                          children: [Image.asset('image_liga/valencia.png')],
+                          children: [Image.asset('image_liga/valencia.png')
+                          ],
                         );
                       });
                     }),
@@ -263,7 +267,7 @@ class _SpainState extends State<Spain> {
           ),
           Container(
             child: liga,
-            height: 320,
+            height: 500,
           )
         ],
       ),
